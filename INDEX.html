@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELECT YOUR TOP FIVE</title>
+
+    <!-- Bootstrap CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Kanit&family=Manrope&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b0a7b06214.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css" />
+
+
+</head>
+
+<body>
+    <!-- Header Section Starts -->
+    <header class="bg-dark text-warning">
+        <section class="pt-5 text-center">
+            <div class="pt-5">
+
+                <h1 class="top-heading display-1">
+                    SELECT YOUR TOP FIVE<br />
+                    <span id="favourite-part"></span>
+                </h1>
+
+                <img class="img-fluid ps-5" src="" alt="">
+                <p class="fs-4 pb-5 pt-4">
+
+                    <br />
+
+                </p>
+
+            </div>
+        </section>
+    </header>
+
+    <!-- Main section starts -->
+
+    <main class="py-5">
+        <!-- Card Section Starts -->
+        <div class="pt-5 pb-3 text-center container">
+            <h2 class="display-4 text center">
+                Select Top Five Player
+            </h2>
+        </div>
+
+        <section class="mt-2 container">
+            <div class="row gap-5">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7 mt-3">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 g-4 pt-4">
+                        <div class="col">
+                            <div class="card">
+                                <img style="max-height: 75%;" src="IMAGE/MESSI.jpg" class="card-img-top " alt="..." />
+                                <div class="card-body bg-black text-center">
+                                    <h5 class="card-title text-warning">Lionel Messi</h5>
+                                    <p class="card-text text-white">
+                                        76 Goals
+                                        <img class="px-2" src="images/football.svg" alt="" />118
+                                        Assist
+                                    </p>
+                                    <button onclick="addToFavourites(this)" type="button"
+                                        class="btn btn-primary px-5 select-btn">
+                                        Select
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="IMAGE/NEYMAR.png" class="card-img-top" alt="..." />
+                                <div class="card-body bg-black text-center">
+                                    <h5 class="card-title text-warning">Neymar Jr</h5>
+                                    <p class="card-text text-white">
+                                        72 Goals<img class="px-2" src="images/football.svg" alt="" />126 Assist
+                                    </p>
+                                    <button onclick="addToFavourites(this)" type="button"
+                                        class="btn btn-primary px-5 select-btn">
+                                        Select
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="IMAGE/MBAPPE.png" class="card-img-top" alt="..." />
+                                <div class="card-body bg-black text-center">
+                                    <h5 class="card-title text-warning">Kylian Mbappé</h5>
+                                    <p class="card-text text-white">
+                                        68 Goals<img class="px-2" src="images/football.svg" alt="" />99 Assist
+                                    </p>
+                                    <button onclick="addToFavourites(this)" type="button"
+                                        class="btn btn-primary px-5 select-btn">
+                                        Select
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="IMAGE/VICTOR.png" class="card-img-top" alt="..." />
+                                <div class="card-body bg-black text-center">
+                                    <h5 class="card-title text-warning">Vítor Machado</h5>
+                                    <p class="card-text text-white">
+                                        70 Goals<img class="px-2" src="images/football.svg" alt="" />113 Assist
+                                    </p>
+                                    <button onclick="addToFavourites(this)" type="button"
+                                        class="btn btn-primary px-5 select-btn">
+                                        Select
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="IMAGE/RAMOS.png" class="card-img-top" alt="..." />
+                                <div class="card-body bg-black text-center">
+                                    <h5 class="card-title text-warning">Sergio Ramos</h5>
+                                    <p class="card-text text-white">
+                                        60 Goals<img class="px-2" src="images/football.svg" alt="" />119 Assist
+                                    </p>
+                                    <button onclick="addToFavourites(this)" type="button"
+                                        class="btn btn-primary px-5 select-btn">
+                                        Select
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="IMAGE/SANCHES.png" class="card-img-top" alt="..." />
+                                <div class="card-body bg-black text-center">
+                                    <h5 class="card-title text-warning">Renato Sanches</h5>
+                                    <p class="card-text text-white">
+                                        56 Goals<img class="px-2" src="images/football.svg" alt="" />98 Assist
+                                    </p>
+                                    <button onclick="addToFavourites(this)" type="button"
+                                        class="btn btn-primary px-5 select-btn">
+                                        Select
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="IMAGE/OZIL.png" class="card-img-top" alt="..." />
+                                <div class="card-body bg-black text-center">
+                                    <h5 class="card-title text-warning">Mesut Özil</h5>
+                                    <p class="card-text text-white">
+                                        72 Goals<img class="px-2" src="images/football.svg" alt="" />94 Assist
+                                    </p>
+                                    <button onclick="addToFavourites(this)" type="button"
+                                        class="btn btn-primary px-5 select-btn">
+                                        Select
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="IMAGE/SALAH (1).png" class="card-img-top" alt="..." />
+                                <div class="card-body bg-black text-center">
+                                    <h5 class="card-title text-warning">Mohamed Salah</h5>
+                                    <p class="card-text text-white">
+                                        57 Goals<img class="px-2" src="images/football.svg" alt="" />91 Assist
+                                    </p>
+                                    <button onclick="addToFavourites(this)" type="button"
+                                        class="btn btn-primary px-5 select-btn">
+                                        Select
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="IMAGE/MARQUINHOS.png" class="card-img-top" alt="..." />
+                                <div class="card-body bg-black text-center">
+                                    <h5 class="card-title text-warning">Marquinhos</h5>
+                                    <p class="card-text text-white">
+                                        48 Goals<img class="px-2" src="images/football.svg" alt="" />80 Assist
+                                    </p>
+                                    <button onclick="addToFavourites(this)" type="button"
+                                        class="btn btn-primary px-5 select-btn">
+                                        Select
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Selected Player List Starts -->
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 text-white mt-5 pb-5">
+                    <section class="mt-1 text-black bg-secondary">
+                        <div class="py-4 text-center">
+                            <h4 class="display-6 fw-bold">
+                                Selected
+                                <span>Players</span>
+                            </h4>
+                            <img class="img-fluid ms-2 mb-3" src="images/red-underline.png" alt="" />
+                        </div>
+
+                        <div class="fs-6 fw-bold">
+                            <ol id="selected-players" class="pb-5"></ol>
+                        </div>
+                    </section>
+
+                    <!--  Calculation Area Starts -->
+
+                    <section id="budget-section" class="mt-4 text-black bg-secondary">
+                        <!-- Player Cost Area -->
+
+                        <div class="py-4 text-center">
+                            <h4 class="display-6 fw-bold ms-5">Budget</h4>
+                            <img class="img-fluid ps-5 mb-4" src="images/red-underline.png" alt="" />
+                        </div>
+
+                        <div class="input-fields text-center">
+                            <p class="d-inline ps-4 pe-3 fs-6">Per Player</p>
+                            <input id="per-player-expense-field" class="fs-6 rounded-1 py-1 px-3 me-2 w-50" type="text"
+                                name="" id="" placeholder="$" />
+
+                            <button id="calculate-btn" type="button"
+                                class="btn  btn-primary px-5 calculate-btn mb-5 mt-4 fw-bold w-50">
+                                Calculate
+                            </button>
+
+                            <h5 class="fw-bold mb-5">
+                                Player Expenses : <span class="dollar fw-bold">$</span>
+                                <span id="player-total-expense">00</span>
+                            </h5>
+
+                            <!-- Total Cost Area -->
+
+                            <p class="d-inline px-2">Manager</p>
+                            <input id="manager-expense-field" class="fs-6 rounded-1 py-1 px-3 me-2 w-50 mb-3"
+                                type="text" name="" id="" placeholder="$" />
+                            <br />
+
+                            <p class="d-inline px-3">Coach</p>
+                            <input id="coach-expense-field" class="fs-6 rounded-1 py-1 px-3 me-2 w-50" type="text"
+                                name="" id="" placeholder="$" />
+                            <br />
+
+                            <button id="calculate-total-btn" type="button"
+                                class="btn btn-primary px-5 calculate-btn mb-5 mt-4 fw-bold">
+                                Calculate Total
+                            </button>
+                        </div>
+
+                        <!-- Displaying Total Cost -->
+
+                        <div class="d-flex justify-content-around">
+                            <h5 class="fw-bold">Total</h5>
+                            <h5 class="mb-3">
+                                <span class="dollar fw-bold">$</span>
+                                <span id="all-total-expense" class="fw-bold">00</span>
+                            </h5>
+                        </div>
+
+
+                    </section>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section Starts -->
+    <footer class="bg-black text-center text-white container-fluid">
+        <section class="py-5">
+            <div class="fs-6">
+                <p>Copyright <span class="px-2"> © </span> 2022</p>
+            </div>
+
+
+        </section>
+    </footer>
+
+    <script src="js/common-functions.js"></script>
+
+    <script src="js/select-and-calculation.js"></script>
+</body>
+
+</html>
